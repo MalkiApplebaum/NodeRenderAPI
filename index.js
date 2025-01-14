@@ -19,6 +19,10 @@ app.get('/services', async (req, res) => {
   }
 });
 
+app.get('/', async (req, res) => {
+    res.json('hello to my rener projects');
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
